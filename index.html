@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <label for="longUrl">Enter a long URL:</label>
+        <input type="url" id="longUrl" placeholder="https://www.example.com/very/long/path">
+        <button id="shortenBtn">Shorten</button>
+
+        <div id="result" class="hidden">
+            <p>Shortened URL:</p>
+            <input type="text" id="shortUrl" readonly>
+            <button id="copyBtn">Copy</button>
+            <p id="copyMessage" class="hidden">Copied!</p>
+        </div>
+       <div id="errorMessage">
+
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
